@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index');
+
+
+
+//ViewsFrontend
+Route::get('/home', function (){
+  echo "teste";
+})->name('home');
+
+
+//ViewsBackend
